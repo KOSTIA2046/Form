@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<script src="form_check.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<form name="dane_osobowe">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Imie" name="f_imie">
+				<input type="text" class="field" placeholder="Nazwisko" name="f_nazwisko">
+				<input class="field" name="f_plec" placeholder="Plec" list="<Plec>">
+                <datalist id="<Plec>">
+                <option value="Kobieta">
+                <option value="Mezczyzna">
+                </datalist>
+				<input type="text" class="field" placeholder="N.panienskie" name="f_nazwisko_p">
+				<input type="email" class="field" placeholder="E-mail" name="f_email">
+				<input type="text" class="field" placeholder="Kod pocztowy" name="f_kod">
+				<input type="text" class="field" placeholder="Ulica/Osiedle"name="f_ulica">
+				<input type="text" class="field" placeholder="Miasto"name="f_miasto">
+				<textarea placeholder="Uwagi" class="field" name="uwagi"></textarea>
+				<input class="btn" type="button" value="Przeslij"
+                onClick="return validate(this.form)">
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>
